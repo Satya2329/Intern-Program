@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package Function_Intern;
 
 import java.util.Scanner;
@@ -39,3 +40,46 @@ public class PrimeN{
         sc.close();
     }
 }
+=======
+package Function_Intern;
+
+import java.util.Scanner;
+
+public class PrimeN{
+
+    static boolean isPrime(int num) {
+
+        if (num <= 1) {
+            return false;
+        }
+
+        for (int i = 2; i <= num / 2; i++) {
+
+            if (num % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter value of N: ");
+        int n = sc.nextInt();
+
+        System.out.println("Prime numbers from 1 to " + n + " are:");
+
+        for (int i = 1; i <= n; i++) {
+
+            if (isPrime(i)) {
+                System.out.print(i + " ");
+            }
+        }
+
+        sc.close();
+    }
+}
+>>>>>>> c77ca4d18f631d52a3fa6341c5508469a7f3924f

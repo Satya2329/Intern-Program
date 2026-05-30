@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class FIbonic {
 
-    // Function to print Fibonacci series
     static void fibonacci(int n) {
 
         int first = 0, second = 1;

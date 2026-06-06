@@ -13,11 +13,10 @@ public class InsertEven {
             int a = sc.nextInt();
             
             if (a % 2 == 0) {
-                arr[i] = a; // Save the even number into the array
+                arr[i] = a; 
                 System.out.println("Added" + arr[i]);
                 i++;        
             } else {
-                // If the number is odd, 'i' does not increment, so the loop retries the same position
                 System.out.println("Invalid input " + a );
             }
         }
